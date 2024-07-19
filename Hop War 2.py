@@ -10,6 +10,8 @@ window.geometry(f'{gameWidth}x{gameHeight}')
 window.title("Hop War 2")
 window.resizable(False, False)
 
+grass_Dead_Image = PhotoImage('grass_dead_96x96.png')
+
 window.update()
 window_width = window.winfo_width()
 window_height = window.winfo_height()
@@ -24,13 +26,17 @@ window.config(background='#98F5F9')
 hop_Area = Canvas(window, background='black', width=gameWidth, height=500)
 hop_Area.pack()
 
-hop_Area.create_line(0, 400, gameWidth, 400, fill="White", width=5)
-hop_Area.create_line(0, 175, gameWidth, 175, fill="White", width=5)
+hop_Area.create_line(0, 440, gameWidth, 440, fill="White", width=5)
+hop_Area.create_line(0, 225, gameWidth, 225, fill="White", width=5)
+
+#grass_Dead = hop_Area.create_image(grass_Dead_Image)
+#grass_Dead.pack()
 
 
-class platform:
-    def __init__(self, hop_Area, ):
-        pass
+
+    
+    
+
 
 
 
