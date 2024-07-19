@@ -1,3 +1,5 @@
+#Hop War 2 
+
 from tkinter import *
 
 gameWidth = 900
@@ -19,8 +21,9 @@ window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
 window.config(background='#98F5F9')
 
-hop_Area = Canvas(window, background='black', width=gameWidth, height=gameHeight - gameHeight * 0.30)
+hop_Area = Canvas(window, background='black', width=gameWidth, height=500)
 hop_Area.pack()
+
  
 
 
