@@ -2,7 +2,7 @@
 
 from tkinter import *
 
-gameWidth = 900
+gameWidth = 1000
 gameHeight = 700
 
 window = Tk()
@@ -23,6 +23,19 @@ window.config(background='#98F5F9')
 
 hop_Area = Canvas(window, background='black', width=gameWidth, height=500)
 hop_Area.pack()
+
+hop_Area.create_line(0, 400, gameWidth, 400, fill="White", width=5)
+hop_Area.create_line(0, 175, gameWidth, 175, fill="White", width=5)
+
+
+class platform:
+    def __init__(self, hop_Area, ):
+        pass
+
+
+
+
+
 
  
 
